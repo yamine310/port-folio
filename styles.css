@@ -142,12 +142,12 @@ nav ul li a{
 }
 .progress_html{
     height: 5px;
-    width: 90%;
+    width: 85%;
     background-color: #007BFF;
 }
 .progress_css{
     height: 5px;
-    width: 85%;
+    width: 80%;
     background-color: #007BFF;
 }
 .progress_js{
@@ -157,12 +157,12 @@ nav ul li a{
 }
 .progress_php{
     height: 5px;
-    width: 70%;
+    width: 60%;
     background-color: #007BFF;
 }
 .progress_ms{
     height: 5px;
-    width: 90%;
+    width: 40%;
     background-color: #007BFF;
 }
 .experience {
