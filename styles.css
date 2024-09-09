@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:burlywood;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navigation{
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+}
+nav{
+    width: 100%;
+    max-width: 1200px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: relative;
+}
+nav p{
+    font-size: 20px;
+    font-weight: 600;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+nav ul li{
+    margin-left: 20px;
+}
+nav ul li a:hover{
+    color: #007BFF;
+}
+nav ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(77, 77, 77);
+}
+#menu{
+    color: white;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    position: absolute;
+    right: 0;
+    display: none;
+}
+#menu:hover{
+    background-color: #0056b3;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#home{
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#home .left .name{
+    font-size: 80px;
+}
+#home .left .ce{
+    font-size: 50px;
+}
+#home img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    box-shadow: 0px 0px 50px #acd4ff;
+    border-radius: 100%;
+}
+#about_section, #skills_section, #work_section, #contact_section{
+    text-align: center;
+    color:#007BFF;
+}
+#about, #skills, .contact{
+    display: flex;
+    flex-direction: row;
+    height: 700px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+#about .left{
+    display: grid;
+    place-content: center;
+    width: 50%;
+}
+#about .right{
+    width: 50%;
+}
+.contact-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+}
+.contact-button p{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.contact-button:hover {
+    background-color: #0056b3;
+}
+.Yamine{
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px #acd4ff;
+}
+.progress_box{
+    width: 100%;
+    box-shadow: 0 0 1px gray;
+}
+.progress_box .txt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 10px;
+    margin-top: 20px;
+}
+.progress_html{
+    height: 5px;
+    width: 90%;
+    background-color: #007BFF;
+}
+.progress_css{
+    height: 5px;
+    width: 85%;
+    background-color: #007BFF;
+}
+.progress_js{
+    height: 5px;
+    width: 65%;
+    background-color: #007BFF;
+}
+.progress_php{
+    height: 5px;
+    width: 70%;
+    background-color: #007BFF;
+}
+.progress_ms{
+    height: 5px;
+    width: 90%;
+    background-color: #007BFF;
+}
+.experience {
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    place-content: center;
+}
+
+.experience img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.experience img:hover{
+    opacity: 50%;
+}
+.contact {
+    display: grid;
+    place-content: center;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+
+}
+#name, #email, #message{
+    width: 400px;
+}
+.con{
+    text-decoration: none;
+    color: white;
+}
+label {
+    display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+textarea {
+    height: 150px;
+}
+.send {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.send:hover {
+    background-color: #0056b3;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    height: 120px;
+    background-color: black;
+    text-align: center;
+}
+footer a{
+    font-size: xx-large;
+    margin: 20px;
+    color: white;
+}
+footer i:hover{
+    cursor: pointer;
+    opacity: 90%;
+}
+
+@media (max-width: 768px) {
+
+    .navigation {
+        height: auto;
+        border-bottom: none;
+        position: static; 
+        background-color: #f2f2f2; 
+        padding: 0 20px;
+        z-index: 999;
+        position: fixed;
+    }
+    
+    nav p {
+        font-size: 24px;
+    }
+    .nav_ul{
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        position: fixed;
+        left: 0;
+        top: 65px;
+        text-align: center;
+        display: none;
+    }
+    .nav_ul.show{
+        display: block;
+    }
+    .nav_ul ul{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    
+  
+    nav ul li {
+        margin-bottom: 50px;
+    }
+    #menu{
+        display: block;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    #home {
+        height: auto;
+        flex-direction: column; 
+        text-align: center;
+        margin: 50px 0;
+        margin-top: 100px;
+        row-gap: 100px;
+
+    }
+   
+    #home .left .name {
+        font-size: 40px;
+        margin: 10px 0;
+    }
+
+    #home .left .ce {
+        font-size: 30px;
+    }
+
+    #home img {
+        width: calc(100vw - 50px);
+        height: calc(100vw - 50px);
+    }
+
+    #about, #skills, .contact {
+        height: auto; 
+        flex-direction: column; 
+        align-items: center;
+    }
+    #about{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    
+    #about .left{
+        display: grid;
+        place-content: center;
+        width: 100%;
+        margin: 50px 0;
+    }
+    #about .left img{
+        align-self: center;
+        width: 90%;
+    }
+    #about .right{
+        width: 100%;
+    }
+
+    .progress_box {
+        width: 100%;
+    }
+    
+    #skills .right img{
+        margin-top: 20px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .progress_html, .progress_css, .progress_js, .progress_php, .progress_ms {
+        width: 100%;
+        margin-top: 10px; 
+    }
+
+    .experience {
+        height: auto; 
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+
+    .experience img {
+        border-radius: 10px;
+        max-width: 100%; 
+        height: auto;
+
+    }
+    #contact_section, #work_section, #skills_section{
+        margin: 50px 0;
+    }
+
+    
+
+    #name, #email, #message {
+        width: calc(100vw - 40px);
+    }
+
+    .send-button {
+        padding: 10px 20px; 
+        font-size: 16px; 
+    }
+
+    footer {
+        margin-top: 50px;
+        height: auto; 
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    footer i, footer h1 {
+        font-size: 20px; 
+        margin: 10px;
+    }
+}
